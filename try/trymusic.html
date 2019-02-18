@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尝试播放/停止音乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+</head>
+<body>
+    <p><span id="name"></span>--<span id="author"></span></p>
+    <audio id="player" src="E://音乐/超跑女神-周杰伦.mp3" ></audio>
+    <button id="button">播放或停止</button>
+    <button id="playButton" >播放</button>
+    <button id="pauseButton">停止</button>
+    <button id="nextButton">下一首</button>
+    <button id="previousButton">上一首</button>
+    <button id="model">播放模式:列表顺序</button>
+    <button onclick="showVolumn()">音量</button>
+    
+    <input id="volumn" type="range" min="0.0" max="1.0"  step="0.1" hidden/><span id="volumnNumber"></span><br/>
+    <input id="musicTimeRange" type="range" min="0.0" max="1.0" ><span id="currentTime"></span>/<span id="duration"></span>
+    <button id="listButton">歌曲列表</button>
+    <!-- 歌曲列表 -->
+    <div id="musicBox" style="overflow-y:auto; width: 200px; height: 400px;background-color: rgb(60, 190, 223); transition-duration: 0.3s" >
+        1<br/>
+        2<br/>
+        3<br/>
+        4<br/>
+        5<br/>
+        6<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        10<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+       9<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+        box;<br/>
+       8<br/>
+    </div>
+</body>
+<script src="../js/musicList.js"></script>
+<script src="try.js"></script>
+
+
+</html>

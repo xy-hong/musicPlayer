@@ -1,0 +1,24 @@
+ {
+        
+        "manifest_version": 2,
+        "name": "My Music Player",
+        "version": "0.1",
+        "description": "A Music Player",
+        "icons": {
+            "16": "images/icon_red_16.png",
+            "48": "images/icon_red_48.png"
+        },
+        "browser_action": {
+            "default_icon": {
+                "19": "images/icon_black_16.png"
+            },
+            "default_title": "My Music Player",
+            "default_popup": "musicPlayerUI.html"
+        },
+        "background": {
+            "page": "musicPlayer.html"
+        },
+        "permissions": [
+            
+        ]
+ }

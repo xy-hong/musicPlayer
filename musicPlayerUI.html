@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>music player UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/musicPlayerUI.css">
+
+</head>
+
+<body>
+    <div id="featureDiv">
+        <div id="div1">
+            <div id="div1_1">
+                <button id="previousButton" class="button white small">◀</button>
+                <button id="playButton" class="button white bigrounded">播放/停止</button>
+                <button id="nextButton" class="button white small">▶</button>
+            </div>
+
+            <div id="div1_2">
+                <button id="volumeButton" class="button white small">音量</button>
+                <button id="modelButton" class="button white small">模式</button>
+                <button id="musicListButton" class="button white small">列表</button>
+                <input id="volumeRange" type="range" min="0.0" max="1.0" step="0.1" /><span id="volumeText">0.5</span>
+            </div>
+
+        </div>
+        <hr />
+        <div id="div2">
+            <div id="div2_1">
+            <b id="musicName">音乐名</b>--<b id="musicAuthor">作者名</b><br />
+            <input id="musicTimeRange" type="range" min="0.0" />
+            <i id="musicCurrentTime">当前时间</i><i>/</i><i id="musicDuration">总时长</i> <br />
+            </div>
+        </div>
+
+
+    </div>
+   
+    <div id="musicListDiv">
+        <table id="musicTable" border="1px" style="width:100%">
+            
+        </table>
+    </div>
+
+
+</body>
+<script src="js/musicList.js"></script>
+<script src="js/musicPlayerUI.js"></script>
+
+</html>
